@@ -1,0 +1,594 @@
+
+/* ==========================================================================
+   RESETEO GLOBAL Y BOX MODEL (MOBILE-FIRST)
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ==========================================================================
+   TIPOGRAFÍA Y ESTILOS GENERALES DEL CUERPO (BASE MOBILE)
+   ========================================================================== */
+body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #141414;            /* Negro carbón */
+    background-color: #FAF8F5; /* Marfil / blanco hueso */
+    overflow-x: hidden;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ==========================================================================
+   ============================== HEADER ====================================
+   ========================================================================== */
+
+/* Base mobile: apilado vertical y fluido */
+header {
+    background-color: rgb(241, 194, 125);
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+header h1,
+.logo-marca {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #141414 !important;
+    text-decoration: none;
+    margin-bottom: 0;
+}
+
+/* Navbar de Bootstrap adaptada a la marca */
+.navbar-divine {
+    background-color: rgb(241, 194, 125) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 14px 20px;
+}
+
+.navbar-brand-divine {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #141414 !important;
+    text-decoration: none;
+    transition: opacity 0.25s ease;
+}
+
+.navbar-brand-divine:hover {
+    opacity: 0.85;
+}
+
+.nav-link-divine {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #141414 !important;
+    padding: 6px 12px !important;
+    transition: color 0.25s ease;
+}
+
+.nav-link-divine:hover {
+    color: #ffffff !important;
+}
+
+.nav-link-divine:focus {
+    outline: 2px dashed #141414;
+    outline-offset: 2px;
+}
+
+.nav-link-divine:active {
+    color: #734c0f !important;
+}
+
+.navbar-toggler {
+    border-color: #141414 !important;
+}
+
+/* Navegación tradicional */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+nav a {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color: #141414;
+    padding-bottom: 2px;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+
+/* ==========================================================================
+   =============================== MAIN =====================================
+   ========================================================================== */
+
+main {
+    width: 100%;
+    max-width: 1150px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+/* Encabezados y jerarquía */
+h1, h2, h3, h4 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #141414;
+}
+
+h1 {
+    font-size: 32px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #C5A880;            /* Dorado champagne */
+    margin-bottom: 16px;
+    border-bottom: 1px solid #E2DED8;
+    padding-bottom: 6px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+section {
+    margin-bottom: 35px;
+}
+
+/* Hero Section Base Mobile */
+.hero {
+    background-color: rgb(255, 219, 172);
+    padding: 25px 15px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+}
+
+.hero figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.hero figcaption {
+    font-size: 14px;
+    font-style: italic;
+    color: #4A4A4A;
+    max-width: 650px;
+}
+
+/* ==========================================================================
+   CAROUSEL BOOTSTRAP ADAPTADO Y CORREGIDO
+   ========================================================================== */
+.carousel-divine {
+    max-width: 900px;              /* Ancho acotado para calzado editorial */
+    margin: 0 auto 40px auto;     /* Centrado horizontal */
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #141414;     /* Fondo negro para eliminar franjas desalineadas */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.carousel-divine .carousel-item {
+    height: 480px;                 /* Altura equilibrada para ver todo el zapato */
+    background-color: #141414;
+    text-align: center;
+}
+
+.carousel-divine .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;           /* Muestra el producto completo sin recortarlo */
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.4s ease;
+}
+
+.carousel-divine .carousel-item:hover img {
+    transform: scale(1.02);
+}
+
+/* Epígrafes legibles sobre la foto */
+.carousel-caption-divine {
+    background: rgba(20, 20, 20, 0.75);
+    backdrop-filter: blur(4px);
+    border-radius: 4px;
+    padding: 10px 18px;
+    bottom: 25px;
+    left: 10%;
+    right: 10%;
+}
+
+.carousel-caption-divine h3 {
+    color: #FAF8F5;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 4px;
+}
+
+.carousel-caption-divine p {
+    color: #dfd9ce;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* Controles anterior y siguiente */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(20, 20, 20, 0.3);
+}
+
+/* Ajuste responsive para celulares */
+@media (max-width: 768px) {
+    .carousel-divine .carousel-item {
+        height: 320px;
+    }
+
+    .carousel-caption-divine {
+        bottom: 15px;
+        padding: 6px 12px;
+    }
+
+    .carousel-caption-divine h3 {
+        font-size: 16px;
+    }
+
+    .carousel-caption-divine p {
+        font-size: 12px;
+    }
+}
+
+/* --------------------------------------------------------------------------
+   CSS GRID MAESTRO (Mobile-First: 1 columna con grid-template-areas)
+   -------------------------------------------------------------------------- */
+.grid-complejo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "area-titulo"
+        "area-principal"
+        "area-item-uno"
+        "area-item-dos";
+    gap: 18px;
+}
+
+.area-titulo {
+    grid-area: area-titulo;
+}
+
+.area-principal {
+    grid-area: area-principal;
+}
+
+.area-item-uno {
+    grid-area: area-item-uno;
+}
+
+.area-item-dos {
+    grid-area: area-item-dos;
+}
+
+/* Tarjetas y Contenedores Pequeños (Box Model: padding >= 20px) */
+article,
+.tarjeta-grid {
+    background-color: #FFFFFF;
+    border: 1px solid #E2DED8;
+    border-radius: 4px;
+    padding: 22px;              /* Cumple con el mínimo de 20px */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+article:hover,
+.tarjeta-grid:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: #C5A880;
+}
+
+/* Contenedor flexible de beneficios para móvil */
+.contenedor-beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* Botón interactivo general */
+.btn-divine {
+    display: inline-block;
+    background-color: #141414;
+    color: #FAF8F5;
+    padding: 10px 22px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 1px solid #141414;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: background-color 0.25s ease, color 0.25s ease, transform 0.15s ease, box-shadow 0.25s ease;
+}
+
+.btn-divine:hover {
+    background-color: #C5A880;
+    color: #141414;
+    border-color: #C5A880;
+    box-shadow: 0 4px 12px rgba(197, 168, 128, 0.35);
+}
+
+.btn-divine:focus {
+    outline: 2px dashed #141414;
+    outline-offset: 3px;
+}
+
+.btn-divine:active {
+    background-color: #996515;
+    transform: scale(0.98);
+}
+
+/* Listas ordenadas e ítems descriptivos */
+ol, ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* ==========================================================================
+   SECCIÓN DE RESEÑAS Y COMENTARIOS (PAGES/PRODUCTOS.HTML)
+   ========================================================================== */
+.seccion-resenas {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tarjeta-resena {
+    background-color: #FFFFFF;
+    border: 1px solid #E2DED8;
+    border-radius: 4px;
+    padding: 24px; /* Supera el mínimo de 20px */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+/* Efecto hover interactivo */
+.tarjeta-resena:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: #C5A880;
+}
+
+.estrellas-calificacion {
+    color: #C5A880; /* Dorado champagne */
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.resena-producto {
+    font-size: 19px;
+    font-weight: 700;
+    color: #141414;
+    margin-bottom: 8px;
+}
+
+.resena-texto {
+    font-style: italic;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: 15px;
+}
+
+.resena-autor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #E2DED8;
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+.autor-nombre {
+    font-weight: 600;
+    color: #141414;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.autor-ciudad {
+    color: #777777;
+    font-style: italic;
+}
+
+
+/* ==========================================================================
+   ============================== FOOTER ====================================
+   ========================================================================== */
+
+footer {
+    background-color: #141414;
+    color: #FAF8F5;
+    padding: 30px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.contenedor-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(250, 248, 245, 0.15);
+    text-align: center;
+}
+
+.redessocialeswhite {
+    color: #FAF8F5;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+footer a {
+    color: #C5A880;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #FAF8F5;
+    text-decoration: underline;
+}
+
+footer div:last-child p {
+    text-align: center;
+    font-size: 14px;
+    color: #BDBDBD;
+}
+
+
+/* ==========================================================================
+   BREAKPOINT DESKTOP (CRITERIO: min-width: 1024px)
+   ========================================================================== */
+@media (min-width: 1024px) {
+
+    /* Header distribuido con logo a un extremo y enlaces al otro */
+    header {
+        padding: 20px 45px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav {
+        gap: 26px;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+
+    main {
+        margin: 45px auto;
+        padding: 0 25px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    section {
+        margin-bottom: 50px;
+    }
+
+    /* Transformación a Grilla Multicolumna con unidades fr */
+    .grid-complejo {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto 1fr 1fr;
+        grid-template-areas:
+            "area-titulo       area-titulo"
+            "area-principal    area-item-uno"
+            "area-principal    area-item-dos";
+        gap: 24px;
+    }
+
+    /* Beneficios en fila de 4 columnas fluidas con Flexbox */
+    .contenedor-beneficios {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .contenedor-beneficios article {
+        flex: 1 1 calc(25% - 20px);
+        min-width: 220px;
+    }
+
+    /* Footer en fila con separación simétrica */
+    .contenedor-footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    footer div:last-child p { 
+        text-align: right;
+    }
+}
