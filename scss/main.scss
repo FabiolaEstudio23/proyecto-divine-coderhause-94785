@@ -1,5 +1,7 @@
-
+// ==========================================================================
 // MAIN - ÚNICO PUNTO DE ENTRADA
+// El orden de los @use respeta el orden de cascada del CSS original.
+// ==========================================================================
 
 // Base
 @use "base/base";
@@ -15,5 +17,6 @@
 @use "components/hero";
 @use "components/carousel";
 @use "components/cards";
+@use "components/accordion";
 @use "components/buttons";
 @use "components/resenas";

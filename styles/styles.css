@@ -416,23 +416,32 @@ article:hover,
   border-color: #C5A880;
 }
 
-.contenedor-beneficios {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
+.accordion-divine {
+  --bs-accordion-bg: #FFFFFF;
+  --bs-accordion-border-color: #E2DED8;
+  --bs-accordion-border-radius: 4px;
+  --bs-accordion-btn-color: #141414;
+  --bs-accordion-active-color: #141414;
+  --bs-accordion-active-bg: rgb(255, 219, 172);
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.2rem #C5A880;
 }
-@media (min-width: 1024px) {
-  .contenedor-beneficios {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
+.accordion-divine .accordion-header {
+  margin: 0;
+  font-size: inherit;
+  letter-spacing: normal;
+  text-transform: none;
 }
-@media (min-width: 1024px) {
-  .contenedor-beneficios article {
-    flex: 1 1 calc(25% - 20px);
-    min-width: 220px;
-  }
+.accordion-divine .accordion-button {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+.accordion-divine .accordion-body {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 17px;
+}
+.accordion-divine .accordion-body a {
+  color: #996515;
 }
 
 .btn-divine {

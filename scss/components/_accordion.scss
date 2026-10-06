@@ -1,0 +1,39 @@
+
+// ACORDEÓN BOOTSTRAP 
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.accordion-divine {
+  // Variables internas de Bootstrap con los colores de la marca
+  --bs-accordion-bg: #{$color-blanco};
+  --bs-accordion-border-color: #{$color-borde};
+  --bs-accordion-border-radius: #{$radio-medio};
+  --bs-accordion-btn-color: #{$color-texto};
+  --bs-accordion-active-color: #{$color-texto};
+  --bs-accordion-active-bg: #{$color-hero};
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.2rem #{$color-dorado};
+
+  // Anula el estilo global de h3 (mayúsculas, márgenes)
+  .accordion-header {
+    margin: 0;
+    font-size: inherit;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+  .accordion-button {
+    font-family: $fuente-principal;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .accordion-body {
+    font-family: $fuente-principal;
+    font-size: 17px;
+
+    a {
+      color: $color-dorado-oscuro;
+    }
+  }
+}
