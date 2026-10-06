@@ -9,6 +9,8 @@ Sitio web oficial de **DIVINE**, marca de calzado femenino de autor con confecci
 - **HTML5**: Maquetación semántica y estructura accesible.
 - **CSS3**: Mobile-First, CSS Grid (`grid-template-areas`), Flexbox y pseudoclases interactivas (`:hover`, `:focus`, `:active`).
 - **Bootstrap 5**: Navbar responsive con menú hamburguesa y Carousel de modelos.
+- **AOS**: animaciones al hacer scroll.
+- **SCSS (Sass)**: partials, variables, mixins con parámetros, `@extend` y operadores.
 
 ## 📱 Páginas Responsivas
 - `index.html`: Portada, galería principal y presentación de marca.
