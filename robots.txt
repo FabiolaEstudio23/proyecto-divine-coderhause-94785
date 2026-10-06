@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fabiolaestudio23.github.io/proyecto-divine-coderhause-94785/sitemap.xml

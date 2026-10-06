@@ -22,18 +22,22 @@ Sitio web oficial de **DIVINE**, marca de calzado femenino de autor con confecci
 
 ## 🗂️ Estructura SCSS
 
+```
 scss/
-├── main.scss        # Único punto de entrada (@use)
+├── main.scss        # único punto de entrada (@use)
 ├── utilities/       # _variables.scss y _mixins.scss
-├── base/            # _base.scss y _tipografia.scss
+├── base/            # _base.scss, _tipografia.scss y _animaciones.scss
 ├── layout/          # _header.scss, _nav.scss, _grid.scss y _footer.scss
-└── components/      # _buttons.scss, _cards.scss, _hero.scss, _carousel.scss y _resenas.scss
+└── components/      # _buttons, _cards, _hero, _carousel, _accordion y _resenas
+```
 
 ## ⚙️ Cómo compilar
 
 El archivo `styles/styles.css` es el resultado de la compilación y no se edita a mano.
 
+```bash
 sass scss/main.scss styles/styles.css --no-source-map
+```
 
 ## 🔍 SEO y Accesibilidad
 
