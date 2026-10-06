@@ -34,3 +34,12 @@ scss/
 El archivo `styles/styles.css` es el resultado de la compilación y no se edita a mano.
 
 sass scss/main.scss styles/styles.css --no-source-map
+
+## 🔍 SEO y Accesibilidad
+
+- `<title>` y `meta description` únicos en cada página, con keywords acordes a su contenido.
+- Etiquetas Open Graph y `canonical` en las 5 páginas.
+- Datos estructurados (JSON-LD) de la tienda en la página de contacto, para SEO local.
+- Todas las imágenes con `alt` descriptivo y nombres de archivo descriptivos.
+- `robots.txt` y `sitemap.xml`.
+- HTML semántico: `header`, `nav`, `main`, `section`, `article` y `footer`.
