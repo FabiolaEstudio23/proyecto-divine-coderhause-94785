@@ -1,6 +1,6 @@
-
+// ==========================================================================
 // ESTILOS GLOBALES A ETIQUETAS
-
+// ==========================================================================
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
@@ -30,6 +30,11 @@ main {
   max-width: $ancho-contenedor;
   margin: 25px auto;
   padding: 0 15px;
+
+  @include tablet {
+    margin: 35px auto;
+    padding: 0 20px;
+  }
 
   @include desktop {
     margin: 45px auto;

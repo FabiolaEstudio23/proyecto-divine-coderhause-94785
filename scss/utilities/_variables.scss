@@ -1,5 +1,6 @@
-
-// VARIABLES 
+// ==========================================================================
+// VARIABLES GLOBALES - DIVINE
+// ==========================================================================
 
 // Tipografía
 $fuente-principal: 'Cormorant Garamond', Georgia, serif;
@@ -42,5 +43,11 @@ $transicion-tarjeta: transform 0.25s ease, box-shadow 0.25s ease, border-color 0
 
 // Medidas y breakpoints
 $ancho-contenedor: 1150px;
-$bp-mobile: 768px;
+$espaciado-base: 8px;            // Unidad base para calcular espacios con operadores
+
+// Breakpoints (mobile-first: la base es celular, sin media query)
+$bp-tablet: 768px;
 $bp-desktop: 1024px;
+
+// Animaciones
+$duracion-animacion: 0.8s;

@@ -1,6 +1,6 @@
-
+// ==========================================================================
 // TIPOGRAFÍA
-
+// ==========================================================================
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
@@ -29,6 +29,10 @@ h1 {
   text-align: center;
   margin-bottom: 12px;
 
+  @include tablet {
+    font-size: 36px;
+  }
+
   @include desktop {
     font-size: 40px;
   }
@@ -40,6 +44,10 @@ h2 {
   margin-bottom: 16px;
   border-bottom: 1px solid $color-borde;
   padding-bottom: 6px;
+
+  @include tablet {
+    font-size: 26px;
+  }
 
   @include desktop {
     font-size: 28px;

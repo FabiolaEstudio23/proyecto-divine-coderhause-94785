@@ -1,6 +1,6 @@
-
-// MIXINS 
-
+// ==========================================================================
+// MIXINS REUTILIZABLES
+// ==========================================================================
 @use "variables" as *;
 
 // Media queries
@@ -10,8 +10,8 @@
   }
 }
 
-@mixin mobile {
-  @media (max-width: $bp-mobile) {
+@mixin tablet {
+  @media (min-width: $bp-tablet) {
     @content;
   }
 }
@@ -50,4 +50,10 @@
   display: flex;
   flex-direction: column;
   transition: $transicion-tarjeta;
+}
+
+// Animación con keyframes (mixin con parámetros)
+// Uso: @include animar(aparecer-subiendo, 0.8s, 0.2s);
+@mixin animar($nombre, $duracion: $duracion-animacion, $retraso: 0s, $timing: ease-out) {
+  animation: $nombre $duracion $timing $retraso both;
 }
