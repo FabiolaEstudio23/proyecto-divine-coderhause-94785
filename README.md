@@ -3,7 +3,7 @@
 Sitio web oficial de **DIVINE**, marca de calzado femenino de autor con confección artesanal y materiales nobles.
 
 ## 🌐 Sitio Web Online
-*cuando se creo pegare aqui el link de git:ESTADO: EN PROCESO
+*Ver sitio desplegado: https://FabiolaEstudio23.github.io/proyecto-divine-coderhause-94785/
 
 ## 🛠️ Tecnologías Utilizadas
 - **HTML5**: Maquetación semántica y estructura accesible.
