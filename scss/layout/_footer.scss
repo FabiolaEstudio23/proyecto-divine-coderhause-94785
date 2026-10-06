@@ -1,0 +1,60 @@
+
+// FOOTER
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+footer {
+  background-color: $color-texto;
+  color: $color-fondo;
+  padding: 30px 15px 15px;
+  @include flex-columna(20px, center);
+
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  a {
+    color: $color-dorado;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.2s ease;
+
+    &:hover {
+      color: $color-fondo;
+      text-decoration: underline;
+    }
+  }
+
+  div:last-child p {
+    text-align: center;
+    font-size: 14px;
+    color: $color-gris-claro;
+
+    @include desktop {
+      text-align: right;
+    }
+  }
+}
+
+.contenedor-footer {
+  width: 100%;
+  @include flex-columna(15px, center);
+  padding-bottom: 15px;
+  border-bottom: 1px solid $color-borde-footer;
+  text-align: center;
+
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+.redessocialeswhite {
+  color: $color-fondo;
+}

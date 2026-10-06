@@ -1,0 +1,53 @@
+
+// MIXINS 
+
+@use "variables" as *;
+
+// Media queries
+@mixin desktop {
+  @media (min-width: $bp-desktop) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $bp-mobile) {
+    @content;
+  }
+}
+
+// Flexbox en columna
+@mixin flex-columna($gap: null, $align: null) {
+  display: flex;
+  flex-direction: column;
+  align-items: $align;
+  gap: $gap;
+}
+
+// Foco con línea punteada (accesibilidad)
+@mixin foco-punteado($offset: 2px) {
+  &:focus {
+    outline: 2px dashed $color-texto;
+    outline-offset: $offset;
+  }
+}
+
+// Efecto hover de tarjetas
+@mixin tarjeta-hover {
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: $sombra-tarjeta;
+    border-color: $color-dorado;
+  }
+}
+
+// Tarjeta blanca con borde
+@mixin tarjeta($padding) {
+  background-color: $color-blanco;
+  border: 1px solid $color-borde;
+  border-radius: $radio-medio;
+  padding: $padding;
+  display: flex;
+  flex-direction: column;
+  transition: $transicion-tarjeta;
+}

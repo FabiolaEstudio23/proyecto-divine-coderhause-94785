@@ -1,0 +1,52 @@
+
+// HEADER
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+header {
+  background-color: $color-header;
+  padding: 16px 20px;
+  @include flex-columna(12px, center);
+  border-bottom: 1px solid $color-borde-header;
+
+  @include desktop {
+    padding: 20px 45px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+header h1,
+.logo-marca {
+  font-family: $fuente-principal;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: $color-texto !important;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+// Navbar de Bootstrap adaptada a la marca
+.navbar-divine {
+  background-color: $color-header !important;
+  border-bottom: 1px solid $color-borde-header;
+  padding: 14px 20px;
+}
+
+.navbar-brand-divine {
+  font-family: $fuente-principal;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: $color-texto !important;
+  text-decoration: none;
+  transition: opacity $transicion-rapida;
+
+  &:hover {
+    opacity: 0.85;
+  }
+}

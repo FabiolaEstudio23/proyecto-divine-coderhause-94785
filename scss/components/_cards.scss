@@ -1,0 +1,29 @@
+
+// TARJETAS Y BENEFICIOS
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+article,
+.tarjeta-grid {
+  @include tarjeta(22px);
+  justify-content: flex-start;
+  @include tarjeta-hover;
+}
+
+.contenedor-beneficios {
+  @include flex-columna(18px);
+
+  @include desktop {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  article {
+    @include desktop {
+      flex: 1 1 calc(25% - 20px);
+      min-width: 220px;
+    }
+  }
+}

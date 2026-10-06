@@ -1,0 +1,59 @@
+
+// RESEÑAS Y COMENTARIOS (pages/productos.html)
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.seccion-resenas {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tarjeta-resena {
+  @include tarjeta(24px);
+  justify-content: space-between;
+  @include tarjeta-hover;
+}
+
+.estrellas-calificacion {
+  color: $color-dorado;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.resena-producto {
+  font-size: 19px;
+  font-weight: 700;
+  color: $color-texto;
+  margin-bottom: 8px;
+}
+
+.resena-texto {
+  font-style: italic;
+  font-size: 16px;
+  color: $color-gris-resena;
+  line-height: 1.5;
+  flex-grow: 1;
+  margin-bottom: 15px;
+}
+
+.resena-autor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid $color-borde;
+  padding-top: 10px;
+  font-size: 14px;
+}
+
+.autor-nombre {
+  font-weight: 600;
+  color: $color-texto;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.autor-ciudad {
+  color: $color-gris-medio;
+  font-style: italic;
+}

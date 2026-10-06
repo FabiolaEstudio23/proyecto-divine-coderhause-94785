@@ -1,0 +1,57 @@
+
+// ESTILOS GLOBALES A ETIQUETAS
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-fondo;
+  overflow-x: hidden;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  width: 100%;
+  max-width: $ancho-contenedor;
+  margin: 25px auto;
+  padding: 0 15px;
+
+  @include desktop {
+    margin: 45px auto;
+    padding: 0 25px;
+  }
+}
+
+section {
+  margin-bottom: 35px;
+
+  @include desktop {
+    margin-bottom: 50px;
+  }
+}
+
+// Listas
+ol,
+ul {
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 8px;
+}

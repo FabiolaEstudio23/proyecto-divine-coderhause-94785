@@ -1,0 +1,19 @@
+
+// MAIN - ÚNICO PUNTO DE ENTRADA
+
+// Base
+@use "base/base";
+@use "base/tipografia";
+
+// Layout
+@use "layout/header";
+@use "layout/nav";
+@use "layout/grid";
+@use "layout/footer";
+
+// Components
+@use "components/hero";
+@use "components/carousel";
+@use "components/cards";
+@use "components/buttons";
+@use "components/resenas";

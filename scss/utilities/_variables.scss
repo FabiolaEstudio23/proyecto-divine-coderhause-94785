@@ -1,0 +1,46 @@
+
+// VARIABLES 
+
+// Tipografía
+$fuente-principal: 'Cormorant Garamond', Georgia, serif;
+
+// Colores
+$color-texto: #141414;           // Negro carbón
+$color-fondo: #FAF8F5;           // Marfil / blanco hueso
+$color-blanco: #FFFFFF;
+$color-dorado: #C5A880;          // Dorado champagne
+$color-dorado-oscuro: #996515;
+$color-marron: #734c0f;
+$color-header: rgb(241, 194, 125);
+$color-hero: rgb(255, 219, 172);
+$color-borde: #E2DED8;
+$color-gris-oscuro: #4A4A4A;
+$color-gris-resena: #333333;
+$color-gris-medio: #777777;
+$color-gris-claro: #BDBDBD;
+$color-beige-claro: #dfd9ce;
+
+// Transparencias
+$color-borde-header: rgba(0, 0, 0, 0.08);
+$color-overlay: rgba(20, 20, 20, 0.75);
+$color-overlay-suave: rgba(20, 20, 20, 0.3);
+$color-borde-footer: rgba(250, 248, 245, 0.15);
+
+// Sombras
+$sombra-tarjeta: 0 8px 20px rgba(0, 0, 0, 0.08);
+$sombra-carousel: 0 8px 24px rgba(0, 0, 0, 0.12);
+$sombra-boton: 0 4px 12px rgba(197, 168, 128, 0.35);
+
+// Bordes redondeados
+$radio-chico: 2px;
+$radio-medio: 4px;
+$radio-grande: 6px;
+
+// Transiciones
+$transicion-rapida: 0.25s ease;
+$transicion-tarjeta: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+
+// Medidas y breakpoints
+$ancho-contenedor: 1150px;
+$bp-mobile: 768px;
+$bp-desktop: 1024px;

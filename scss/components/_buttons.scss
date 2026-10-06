@@ -1,0 +1,36 @@
+
+// BOTONES
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+.btn-divine {
+  display: inline-block;
+  background-color: $color-texto;
+  color: $color-fondo;
+  padding: 10px 22px;
+  font-family: $fuente-principal;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 1px solid $color-texto;
+  border-radius: $radio-chico;
+  text-decoration: none;
+  transition: background-color $transicion-rapida, color $transicion-rapida,
+    transform 0.15s ease, box-shadow $transicion-rapida;
+
+  &:hover {
+    background-color: $color-dorado;
+    color: $color-texto;
+    border-color: $color-dorado;
+    box-shadow: $sombra-boton;
+  }
+
+  @include foco-punteado(3px);
+
+  &:active {
+    background-color: $color-dorado-oscuro;
+    transform: scale(0.98);
+  }
+}

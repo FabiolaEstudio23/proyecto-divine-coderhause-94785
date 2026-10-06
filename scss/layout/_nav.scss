@@ -1,0 +1,65 @@
+
+// NAVEGACIÓN
+
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+
+// Links de la navbar de Bootstrap
+.nav-link-divine {
+  font-family: $fuente-principal;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: $color-texto !important;
+  padding: 6px 12px !important;
+  transition: color $transicion-rapida;
+
+  &:hover {
+    color: $color-blanco !important;
+  }
+
+  @include foco-punteado;
+
+  &:active {
+    color: $color-marron !important;
+  }
+}
+
+.navbar-toggler {
+  border-color: $color-texto !important;
+}
+
+// Navegación tradicional
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+
+  @include desktop {
+    gap: 26px;
+  }
+
+  a {
+    font-family: $fuente-principal;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    color: $color-texto;
+    padding-bottom: 2px;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+
+    &:hover {
+      color: $color-blanco;
+      border-bottom: 1px solid $color-blanco;
+    }
+
+    @include desktop {
+      font-size: 17px;
+    }
+  }
+}
