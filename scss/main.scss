@@ -1,11 +1,10 @@
-// ==========================================================================
+
 // MAIN - ÚNICO PUNTO DE ENTRADA
-// El orden de los @use respeta el orden de cascada del CSS original.
-// ==========================================================================
 
 // Base
 @use "base/base";
 @use "base/tipografia";
+@use "base/animaciones";
 
 // Layout
 @use "layout/header";

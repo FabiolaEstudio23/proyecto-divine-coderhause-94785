@@ -1,6 +1,6 @@
-
+// ==========================================================================
 // HERO
-
+// ==========================================================================
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
@@ -10,6 +10,13 @@
   border-radius: $radio-medio;
   @include flex-columna(15px, center);
   text-align: center;
+
+  // Animación nativa de entrada (mixin con parámetros + @keyframes)
+  @include animar(aparecer-subiendo, 0.9s);
+
+  @include tablet {
+    padding: $espaciado-base * 4 $espaciado-base * 4;
+  }
 
   figure {
     @include flex-columna(8px, center);

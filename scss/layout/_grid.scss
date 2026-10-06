@@ -1,6 +1,6 @@
-
-// CSS GRID
-
+// ==========================================================================
+// CSS GRID MAESTRO (Mobile-First: 1 columna con grid-template-areas)
+// ==========================================================================
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
@@ -12,7 +12,17 @@
     "area-principal"
     "area-item-uno"
     "area-item-dos";
-  gap: 18px;
+  gap: $espaciado-base * 2;
+
+  // Tablet: 2 columnas, el bloque principal ocupa todo el ancho
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "area-titulo    area-titulo"
+      "area-principal area-principal"
+      "area-item-uno  area-item-dos";
+    gap: $espaciado-base * 3;
+  }
 
   @include desktop {
     grid-template-columns: 2fr 1fr;
@@ -21,7 +31,7 @@
       "area-titulo       area-titulo"
       "area-principal    area-item-uno"
       "area-principal    area-item-dos";
-    gap: 24px;
+    gap: $espaciado-base * 3;
   }
 }
 

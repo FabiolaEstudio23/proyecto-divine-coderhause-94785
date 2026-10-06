@@ -1,6 +1,6 @@
-
+// ==========================================================================
 // BOTONES
-
+// ==========================================================================
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
@@ -25,6 +25,7 @@
     color: $color-texto;
     border-color: $color-dorado;
     box-shadow: $sombra-boton;
+    transform: translateY(-2px);
   }
 
   @include foco-punteado(3px);

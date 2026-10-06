@@ -1,18 +1,21 @@
-
+// ==========================================================================
 // RESEÑAS Y COMENTARIOS (pages/productos.html)
-
+// ==========================================================================
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
+@use "cards";
 
 .seccion-resenas {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: $espaciado-base * 6;
+  margin-bottom: $espaciado-base * 6;
 }
 
+// @extend: hereda todo el estilo de las tarjetas (fondo, borde, hover)
+// y solo cambia lo que la diferencia
 .tarjeta-resena {
-  @include tarjeta(24px);
+  @extend .tarjeta-grid;
+  padding: $espaciado-base * 3;
   justify-content: space-between;
-  @include tarjeta-hover;
 }
 
 .estrellas-calificacion {
