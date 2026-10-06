@@ -72,29 +72,98 @@
             </article>
         </section>
 
-        <!-- Sección de beneficios responsiva (Tarjetas con pseudoclase :hover) -->
+        <!-- Sección de beneficios con GRID SYSTEM DE BOOTSTRAP (row / col) -->
+        <!-- 1 columna en celular, 2 en tablet y 4 en pantallas grandes -->
         <section>
             <h2>Beneficios Exclusivos</h2>
-            <div class="contenedor-beneficios">
-                <article>
-                    <h3>Confección Artesanal</h3>
-                    <p>Producción nacional desarrollada con materiales de primera selección.</p>
-                </article>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="h-100">
+                        <h3>Confección Artesanal</h3>
+                        <p>Producción nacional desarrollada con materiales de primera selección.</p>
+                    </article>
+                </div>
 
-                <article>
-                    <h3>Primer Cambio Bonificado</h3>
-                    <p>Tenés hasta 30 días para realizar el cambio de talle a domicilio sin costo.</p>
-                </article>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="h-100">
+                        <h3>Primer Cambio Bonificado</h3>
+                        <p>Tenés hasta 30 días para realizar el cambio de talle a domicilio sin costo.</p>
+                    </article>
+                </div>
 
-                <article>
-                    <h3>Cuotas Sin Interés</h3>
-                    <p>Financiación disponible en 3 y 6 pagos sin interés con todas las tarjetas bancarias.</p>
-                </article>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="h-100">
+                        <h3>Cuotas Sin Interés</h3>
+                        <p>Financiación disponible en 3 y 6 pagos sin interés con todas las tarjetas bancarias.</p>
+                    </article>
+                </div>
 
-                <article>
-                    <h3>Envíos a Todo el País</h3>
-                    <p>Despachos rápidos y seguros con número de seguimiento en tiempo real.</p>
-                </article>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <article class="h-100">
+                        <h3>Envíos a Todo el País</h3>
+                        <p>Despachos rápidos y seguros con número de seguimiento en tiempo real.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPONENTE INTERACTIVO DE BOOTSTRAP: Acordeón de preguntas frecuentes -->
+        <section>
+            <h2>Preguntas Frecuentes</h2>
+            <div class="accordion accordion-divine" id="faqDivine">
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                            ¿Cómo elijo mi talle?
+                        </button>
+                    </h3>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqDivine">
+                        <div class="accordion-body">
+                            Consultá nuestra <a href="pages/guia-talles.html">Guía de Talles</a> para encontrar la medida que mejor se adapta a tu pie.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                            ¿Puedo cambiar mi compra?
+                        </button>
+                    </h3>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqDivine">
+                        <div class="accordion-body">
+                            Sí. Tenés hasta 30 días para realizar el primer cambio de talle a domicilio, sin costo.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                            ¿Qué medios de pago aceptan?
+                        </button>
+                    </h3>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqDivine">
+                        <div class="accordion-body">
+                            Aceptamos todas las tarjetas bancarias, con financiación en 3 y 6 cuotas sin interés.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                            ¿Hacen envíos a todo el país?
+                        </button>
+                    </h3>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqDivine">
+                        <div class="accordion-body">
+                            Sí, enviamos a todo el país con número de seguimiento en tiempo real.
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
