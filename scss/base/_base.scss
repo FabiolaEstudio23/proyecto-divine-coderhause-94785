@@ -1,6 +1,4 @@
-// ==========================================================================
 // ESTILOS GLOBALES A ETIQUETAS
-// ==========================================================================
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
@@ -17,6 +15,12 @@ body {
 
 p {
   margin-bottom: 12px;
+}
+
+// Datos de contacto: sin cursiva ni margen extra del navegador/Bootstrap
+address {
+  font-style: normal;
+  margin-bottom: 0;
 }
 
 img {

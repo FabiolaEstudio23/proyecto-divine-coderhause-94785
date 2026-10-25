@@ -92,43 +92,50 @@
             <article class="area-principal">
                 <h3>Atención al Cliente Central</h3>
                 <p>Para consultas sobre stock, asesoramiento de hormas o pedidos en curso, escribinos por nuestros canales oficiales.</p>
-                <p><strong>Email directo:</strong> contacto@divine.com.ar</p>
-                <p><strong>Teléfono:</strong> +54 11 5555-0199</p>
+                <address>
+                    <p><strong>Email directo:</strong> contacto@divine.com.ar</p>
+                    <p><strong>Teléfono:</strong> +54 11 5555-0199</p>
+                </address>
                 <p>Atención telefónica de Lunes a Sábados de 10:00 a 19:00 hs.</p>
                 <a href="mailto:contacto@divine.com.ar" class="btn-divine mt-2 align-self-start">Enviar Correo</a>
             </article>
 
             <article class="area-item-uno">
                 <h3>Boutique Belgrano</h3>
-                <p>Av. Cabildo y Juramento, CABA.</p>
+                <address>
+                    <p>Av. Cabildo y Juramento, CABA.</p>
+                </address>
                 <p><strong>Horarios:</strong> Lunes a Sábados de 11:00 a 20:00 hs.</p>
             </article>
 
             <article class="area-item-dos">
                 <h3>Boutique Recoleta</h3>
-                <p>Av. Alvear 1750, CABA.</p>
+                <address>
+                    <p>Av. Alvear 1750, CABA.</p>
+                </address>
                 <p><strong>Horarios:</strong> Lunes a Sábados de 11:00 a 19:30 hs.</p>
             </article>
         </section>
     </main>
 
     <footer>
-        <div class="contenedor-footer">
-            <div>
-                <h3 class="redessocialeswhite">Redes sociales</h3>
-                <ul>
-                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                    <li><a href="https://ar.linkedin.com/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-                </ul>
-            </div>
+        <!-- Redes sociales: navegación secundaria del sitio -->
+        <nav class="footer-redes" aria-labelledby="titulo-redes">
+            <h3 id="titulo-redes" class="redessocialeswhite">Redes sociales</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://ar.linkedin.com/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+            </ul>
+        </nav>
 
-            <div>
-                <p>Copyright © 2026 DIVINE. Todos los derechos reservados.</p>
-                <p>Av. Cabildo y Juramento, Belgrano, CABA.</p>
-                <p>Días y horarios: Lunes a Sábados de 11:00 a 20:00 hs.</p>
-            </div>
-        </div>
+        <!-- Datos de contacto de la tienda: <address> en lugar de <div> -->
+        <address class="footer-datos">
+            <p>Av. Cabildo y Juramento, Belgrano, CABA.</p>
+            <p>Días y horarios: Lunes a Sábados de 11:00 a 20:00 hs.</p>
+        </address>
+
+        <p class="footer-copy"><small>Copyright © 2026 DIVINE. Todos los derechos reservados.</small></p>
     </footer>
 
     <!-- Bootstrap -->
