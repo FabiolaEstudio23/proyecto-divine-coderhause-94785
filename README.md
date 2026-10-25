@@ -3,13 +3,15 @@
 Sitio web oficial de **DIVINE**, marca de calzado femenino de autor con confección artesanal y materiales nobles.
 
 ## 🌐 Sitio Web Online
-*Ver sitio desplegado: https://FabiolaEstudio23.github.io/proyecto-divine-coderhause-94785/
+
+**Deploy en Netlify:** https://divine-calzado.netlify.app
 
 ## 🛠️ Tecnologías Utilizadas
 - **HTML5**: Maquetación semántica y estructura accesible.
 - **CSS3**: Mobile-First, CSS Grid (`grid-template-areas`), Flexbox y pseudoclases interactivas (`:hover`, `:focus`, `:active`).
 - **Bootstrap 5**: Navbar responsive con menú hamburguesa y Carousel de modelos.
-- **AOS**: animaciones al hacer scroll.
+- **AOS**: animaciones al hacer scroll (librería externa).
+- **Animaciones nativas**: `@keyframes` y `transition` escritas en SCSS.
 - **SCSS (Sass)**: partials, variables, mixins con parámetros, `@extend` y operadores.
 
 ## 📱 Páginas Responsivas
@@ -18,7 +20,17 @@ Sitio web oficial de **DIVINE**, marca de calzado femenino de autor con confecci
 - `pages/contacto.html`: Canales de atención y boutiques con CSS Grid.
 - `pages/sobre-nosotros.html` y `pages/guia-talles.html`: Páginas informativas con Navbar y Footer unificados.
 
-- **SCSS (Sass)**: Estilos organizados en partials con variables, mixins, nesting y `@use`.
+## 📁 Estructura del proyecto
+
+```
+├── index.html          # portada
+├── pages/              # productos, sobre-nosotros, guia-talles y contacto
+├── assets/img/         # todas las imágenes del sitio
+├── scss/               # estilos fuente (SCSS)
+├── styles/styles.css   # CSS compilado
+├── robots.txt
+└── sitemap.xml
+```
 
 ## 🗂️ Estructura SCSS
 
@@ -49,4 +61,4 @@ sass scss/main.scss styles/styles.css --no-source-map
 - HTML semántico: `header`, `nav`, `main`, `section`, `article` y `footer`.
 - Footer sin `<div>` genéricos: redes sociales en `<nav>`, dirección y horarios en `<address>` y copyright en `<small>`.
 - Reseñas con `<figure>` + `<blockquote>` + `<figcaption>`; las estrellas son decorativas (`aria-hidden`) y la calificación se anuncia con texto para lectores de pantalla.
-- Contraste WCAG AA verificado en las 5 páginas 
+- Contraste WCAG AA verificado en las 5 páginas (mínimo 4.5:1 en todos los textos).
