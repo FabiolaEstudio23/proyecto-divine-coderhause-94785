@@ -84,29 +84,30 @@
                 <li>Trazá una línea recta delante de tu dedo más largo con un lápiz.</li>
                 <li>Medí con una regla la distancia en centímetros y buscala en la tabla.</li>
             </ol>
-            <div class="mt-4">
+            <p class="mt-4">
                 <a href="contacto.html" class="btn-divine">¿Dudas con tu talle? Escribinos</a>
-            </div>
+            </p>
         </section>
     </main>
 
     <footer>
-        <div class="contenedor-footer">
-            <div>
-                <h3 class="redessocialeswhite">Redes sociales</h3>
-                <ul>
-                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                    <li><a href="https://ar.linkedin.com/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-                </ul>
-            </div>
+        <!-- Redes sociales: navegación secundaria del sitio -->
+        <nav class="footer-redes" aria-labelledby="titulo-redes">
+            <h3 id="titulo-redes" class="redessocialeswhite">Redes sociales</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://ar.linkedin.com/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
+            </ul>
+        </nav>
 
-            <div>
-                <p>Copyright © 2026 DIVINE. Todos los derechos reservados.</p>
-                <p>Av. Cabildo y Juramento, Belgrano, CABA.</p>
-                <p>Días y horarios: Lunes a Sábados de 11:00 a 20:00 hs.</p>
-            </div>
-        </div>
+        <!-- Datos de contacto de la tienda: <address> en lugar de <div> -->
+        <address class="footer-datos">
+            <p>Av. Cabildo y Juramento, Belgrano, CABA.</p>
+            <p>Días y horarios: Lunes a Sábados de 11:00 a 20:00 hs.</p>
+        </address>
+
+        <p class="footer-copy"><small>Copyright © 2026 DIVINE. Todos los derechos reservados.</small></p>
     </footer>
 
     <!-- Bootstrap -->
@@ -124,3 +125,4 @@
 </body>
 
 </html>
+

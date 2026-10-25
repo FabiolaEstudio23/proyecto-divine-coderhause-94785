@@ -1,6 +1,4 @@
-// ==========================================================================
 // TIPOGRAFÍA
-// ==========================================================================
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
@@ -40,7 +38,9 @@ h1 {
 
 h2 {
   font-size: 24px;
-  color: $color-dorado;
+  // Dorado oscuro: el dorado champagne sobre el fondo marfil daba 2.1:1;
+  // este tono llega a 4.7:1 (WCAG AA)
+  color: $color-dorado-oscuro;
   margin-bottom: 16px;
   border-bottom: 1px solid $color-borde;
   padding-bottom: 6px;

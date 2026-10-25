@@ -47,3 +47,6 @@ sass scss/main.scss styles/styles.css --no-source-map
 - Todas las imágenes con `alt` descriptivo y nombres de archivo descriptivos.
 - `robots.txt` y `sitemap.xml`.
 - HTML semántico: `header`, `nav`, `main`, `section`, `article` y `footer`.
+- Footer sin `<div>` genéricos: redes sociales en `<nav>`, dirección y horarios en `<address>` y copyright en `<small>`.
+- Reseñas con `<figure>` + `<blockquote>` + `<figcaption>`; las estrellas son decorativas (`aria-hidden`) y la calificación se anuncia con texto para lectores de pantalla.
+- Contraste WCAG AA verificado en las 5 páginas 

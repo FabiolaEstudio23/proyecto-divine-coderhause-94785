@@ -1,14 +1,28 @@
-// ==========================================================================
+
 // FOOTER
-// ==========================================================================
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 
+// Estructura semántica:
+// <nav class="footer-redes">  → redes sociales
+// <address class="footer-datos"> → dirección y horarios de la tienda
+// <p class="footer-copy">     → copyright
 footer {
   background-color: $color-texto;
   color: $color-fondo;
   padding: 30px 15px 15px;
-  @include flex-columna(20px, center);
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+  text-align: center;
+
+  // Desktop: redes a la izquierda, datos a la derecha y copyright abajo
+  @include desktop {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-items: start;
+    text-align: left;
+  }
 
   ul {
     list-style: none;
@@ -16,6 +30,7 @@ footer {
     gap: 15px;
     margin-left: 0;
     margin-bottom: 0;
+    padding-left: 0; // anula el padding que Bootstrap agrega a las listas
   }
 
   a {
@@ -29,29 +44,57 @@ footer {
       text-decoration: underline;
     }
   }
+}
 
-  div:last-child p {
-    text-align: center;
-    font-size: 14px;
-    color: $color-gris-claro;
+// Es un <nav>, así que anulamos los estilos genéricos de "nav" (layout/_nav)
+// para que conserve el aspecto original del footer
+.footer-redes {
+  display: block;
+
+  a {
+    font-family: inherit;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: normal;
+    padding-bottom: 0;
+
+    &:hover {
+      border-bottom: none;
+    }
 
     @include desktop {
-      text-align: right;
+      font-size: 16px;
     }
   }
 }
 
-.contenedor-footer {
-  width: 100%;
-  @include flex-columna(15px, center);
-  padding-bottom: 15px;
-  border-bottom: 1px solid $color-borde-footer;
-  text-align: center;
+.footer-datos {
+  font-style: normal;
+  margin-bottom: 0;
+
+  p {
+    font-size: 14px;
+    color: $color-gris-claro;
+  }
 
   @include desktop {
-    flex-direction: row;
-    justify-content: space-between;
-    text-align: left;
+    justify-self: end;
+    text-align: right;
+  }
+}
+
+.footer-copy {
+  grid-column: 1 / -1;
+  justify-self: stretch;
+  text-align: center;
+  margin-bottom: 0;
+  padding-top: 15px;
+  border-top: 1px solid $color-borde-footer;
+  font-size: 14px;
+  color: $color-gris-claro;
+
+  small {
+    font-size: inherit;
   }
 }
 
